@@ -35,7 +35,7 @@ class Book
     private ?string $isbn10 = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $isb13 = null;
+    private ?string $isbn13 = null;
 
     #[ORM\Column(nullable: true)]
     private ?int $pageCount = null;
@@ -139,14 +139,14 @@ class Book
         return $this;
     }
 
-    public function getIsb13(): ?string
+    public function getIsbn13(): ?string
     {
-        return $this->isb13;
+        return $this->isbn13;
     }
 
-    public function setIsb13(?string $isb13): static
+    public function setIsbn13(?string $isb13): static
     {
-        $this->isb13 = $isb13;
+        $this->isbn13 = $isb13;
 
         return $this;
     }
