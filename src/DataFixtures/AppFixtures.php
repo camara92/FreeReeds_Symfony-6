@@ -58,8 +58,8 @@ class AppFixtures extends Fixture
             $book->setIsbn10($faker->isbn10);
             $book->setIsbn13($faker->isbn13);
             $book->setPageCount($faker->numberBetween(100, 1000));
-            $book->setThumbnail($faker->imageUrl(200, 300));
-            $book->setSmallThumbnail($faker->imageUrl(100, 150));
+            $book->setThumbnail('https://picsum.photos/200/300');
+            $book->setSmallThumbnail('https://picsum.photos/100/150');
             $book->addAuthor($faker->randomElement($authors));
             $book->addPublisher($faker->randomElement($publishers));
 

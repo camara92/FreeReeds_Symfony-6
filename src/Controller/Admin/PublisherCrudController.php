@@ -7,6 +7,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 
 class PublisherCrudController extends AbstractCrudController
 {
+    use Trait\ReadOnlyTrait; 
     public static function getEntityFqcn(): string
     {
         return Publisher::class;
