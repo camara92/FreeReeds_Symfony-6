@@ -4,7 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Book;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
-
+use EasyCorp\Bundle\EasyAdminBundle\Field\CollectionField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
@@ -30,6 +30,9 @@ class BookCrudController extends AbstractCrudController
             TextField::new('isbn13'),
             ImageField::new('smallThumbnail'),
             ImageField::new('thumbnail'),
+            CollectionField::new('authors'),
+            CollectionField::new('publishers') ,
+            TextField::new('googleBooksId') ,
 
         ];
     }
