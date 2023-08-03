@@ -45,7 +45,7 @@ class DashboardController extends AbstractDashboardController
     {
        
         yield MenuItem::linkToCrud('Livres', 'fas fa-book', Book::class);
-        yield MenuItem::linkToCrud('Invitations', 'fas fa-book', Invitation::class);
+        yield MenuItem::linkToCrud('Invitations', 'fas fa-envelope-open-text', Invitation::class);
         yield MenuItem::linkToCrud('Auteurs', 'fas fa-user-pen',  Author::class);
         yield MenuItem::linkToCrud('Editeurs', 'fas fa-building', Publisher::class);
         yield MenuItem::linkToCrud('Status', 'fas fa-info-circle', Status::class);
