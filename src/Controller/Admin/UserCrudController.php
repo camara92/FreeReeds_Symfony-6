@@ -25,8 +25,8 @@ class UserCrudController extends AbstractCrudController
             IdField::new('id'),
             TextField::new('pseudo', 'Noms'), 
             EmailField::new('email'),
-            AssociationField::new('userBooks')->onlyOnIndex(),
-            ArrayField::new('userBooks')->onlyOnDetail(), 
+            AssociationField::new('userBooks', 'livres lus par utilisateur')->onlyOnIndex(),
+            ArrayField::new('userBooks', 'livres lus par utilisateur')->onlyOnDetail(), 
           
            
         ];
